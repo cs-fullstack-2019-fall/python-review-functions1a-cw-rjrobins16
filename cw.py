@@ -7,6 +7,7 @@ def printNumbers():
     for x in range(-25, 21, 1):
         print(x)
 
+
 # created for loop then called the function
 
 printNumbers()
@@ -39,15 +40,15 @@ print(checkPassword(password, password2))
 #
 # The number 5 is an odd number!
 
-def problem3(number):
+def problem3(number):  # conditions check for division by 2
     if number % 2 == 0:
         return f'The number {number} is even.'
     elif number % 2 != 0:
         return f'The number {number} is odd.'
 
 
-userNumberInput = int(input("Enter a number."))
-print(problem3(userNumberInput))
+userNumberInput = int(input("Enter a number to see if it's even or odd."))  # enter number to check even or odd
+print(problem3(userNumberInput))  # prints function's return
 
 
 # ### Problem 4
@@ -62,7 +63,7 @@ def main():
 
 
 def first():
-    return second("Hello ")
+    return second("Hello ")  # inputs hello into the greeting function
 
 
 def second(greeting):
@@ -78,11 +79,13 @@ main()
 # 'q', ask them to input another string.
 
 def function5():
-    userInput = 1
+    userInput = 1  # declares variable
     userInput = input("Enter a word or q to quit.")
     while userInput != "q":
         userInput = input("Enter a word or q to quit.")
 
+
+# basic while loop that im tired of doing lol :)
 
 function5()
 
@@ -98,13 +101,15 @@ function5()
 # The quotient of 2 / 6 is .333
 
 def challenge(number1, number2):
-    sumofnum = f'The sum of {number1} + {number2} is {number1 + number2}'
-    difference = f'The difference of {number1} - {number2} is {number1 - number2}'
-    product = f'The product of {number1} * {number2} is {number1 * number2}'
-    quotient = f'The product of {number1} / {number2} is {number1 / number2}'
-    return sumofnum, difference, product, quotient
+    sumofnum = f'The sum of {number1} + {number2} is {number1 + number2}'  # add the numbers
+    difference = f'The difference of {number1} - {number2} is {number1 - number2}'  # subtract numbers
+    product = f'The product of {number1} * {number2} is {number1 * number2}'  # multiply numbers
+    quotient = f'The product of {number1} / {number2} is {number1 / number2}'  # divides numbers
+    return sumofnum, difference, product, quotient  # returns the mini equation statements
+
+
 # f strings that print the smaller math functions
 
-challengenumber1 = int(input("Enter a big number."))
-challengenumber2 = int(input("Enter a lesser number."))
-print(challenge(challengenumber1, challengenumber2))
+challengenumber1 = int(input("Enter a big number."))  # accepts a number
+challengenumber2 = int(input("Enter a lesser number."))  # accepts another number
+print(challenge(challengenumber1, challengenumber2))  # prints the function return with the inputted numbers
